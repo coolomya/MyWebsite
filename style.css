@@ -1,0 +1,82 @@
+@font-face{
+	font-family: myFirstFont;
+	src: url(fonts/Semi-Coder-Regular.otf);
+}
+
+body{
+	sbackground: red;
+	sborder-style: dotted;
+	box-sizing: border-box;
+	margin-left: 0;
+}
+
+#main-header{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100vh;
+	vborder: 10px solid red;
+
+}
+
+#hi-div{
+	position: absolute;
+	top:0;
+	background: #E85078;
+	height: 50%;
+	width:100%;
+	zborder-style: dotted;
+	text-align: center;
+	margin: 0;
+	border: 0;
+}
+
+#changing-div{
+	position: absolute;
+	bottom: 0;
+	/*top: 50%;*/
+	height: 50%;
+	width: 100%;
+	text-align: center;
+	zborder-style: dotted;
+	background: white;
+}
+
+#hi-div h1{
+	position: absolute;
+	width:100%;
+	bottom: 0;
+	color: white;
+	background: #E85078;
+}
+
+#changing-div h1{
+	position: absolute;
+	width:100%;
+	top: 0;
+	color: #E85078;
+	background: white;
+}
+
+
+h1{
+	font-size: 4vw;
+	font-style: bold;
+	font-family: myFirstFont; 
+	color:0;
+	vertical-align: middle;
+	margin:0;
+}
+
+@media screen and (min-width: 820px) {
+  h1 {
+     font-size: 36px;
+  }
+}
+
+
+#rest-text{
+	position: absolute;
+	top:100%;
+}
+
