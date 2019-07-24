@@ -6,7 +6,7 @@
 body{
 	sbackground: red;
 	sborder-style: dotted;
-	box-sizing: border-box;
+	sbox-sizing: border-box;
 	margin-left: 0;
 }
 
@@ -55,9 +55,20 @@ body{
 	width:100%;
 	top: 0;
 	color: #E85078;
-	background: white;
+	sbackground: white;
+	animation-name: panUp;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
+@keyframes panUp{
+	0%{}
+	40%{top:0;}
+	100%{top:-20%;}
+}
 
 h1{
 	font-size: 4vw;
@@ -78,5 +89,6 @@ h1{
 #rest-text{
 	position: absolute;
 	top:100%;
+
 }
 
