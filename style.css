@@ -11,40 +11,153 @@ body{
 	sbox-sizing: border-box;
 	margin-left: 0;
 }
+/* header - all */
+h1{
+	font-size: 4vw;
+	font-style: bold;
+	font-family: myFirstFont; 
+	color:0;
+	vertical-align: middle;
+	margin:0;
+
+}
+
+#skills h2{
+	
+	color: #E85078;
+	sbackground: white;
+	font-style: bold;
+	font-family: myFirstFont; 
+	text-align: center;
+	margin:0;
+}
+
 
 /* first block*/
-#main-header{
+/*just set top position individually by id*/
+.blocks{
 	position: absolute;
-	top:0;
 	width: 100%;
 	height: 100vh;
 	vborder: 10px solid red;
 
 }
 
-/* top half of first block*/
-#hi-div{
+/* top sub-block*/
+.subblock-top{
 	position: absolute;
 	top:0;
-	background: #E85078;
 	height: 50%;
 	width:100%;
 	zborder-style: dotted;
-	text-align: center;
 	margin: 0;
 	border: 0;
 }
 
-/* bottom half of first block */
-#changing-div{
+/* bottom sub-block*/
+.subblock-bot{
 	position: absolute;
-	bottom: 0;
-	/*top: 50%;*/
+	bottom:0;
 	height: 50%;
-	width: 100%;
-	text-align: center;
+	width:100%;
 	zborder-style: dotted;
+	margin: 0;
+	border: 0;
+}
+/* left sub-block*/
+.subblock-left{
+	position: absolute;
+	left:0;
+	height: 100%;
+	width:50%;
+	zborder-style: dotted;
+	margin: 0;
+	border: 0;
+}
+/* right sub-block*/
+.subblock-right{
+	position: absolute;
+	right:0;
+	height: 100%;
+	width:50%;
+	zborder-style: dotted;
+	margin: 0;
+	border: 0;
+}
+/* center sub-block*/
+/* isnt perfectly dynamically center*/
+.subblock-center{
+	position: absolute;
+	top:25%;
+	left:25%;
+	height: 50%;
+	width: 50%;
+	zborder-style: dotted;
+	margin: 0;
+	border: 0;
+	background-color: whiste;
+}
+
+/*skill bar divs*/
+.skillBar{
+	font-size: 2vw;
+	font-style: bold;
+	font-family: myFirstFont; 
+	color: white;
+	background-color: #E85078;
+	vmargin-top: 100%;
+	animation-name: expand;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+}
+
+/*skill bar divs*/
+.skillName{
+	font-size: 2vw;
+	font-style: bold;
+	font-family: myFirstFont; 
+	color: #E85078;
+	background-color: white;
+	vmargin-top: 100%;
+	animation-name: panLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes expand{
+	from{width: 0;}
+	
+}
+@keyframes panLeft{
+	0%{
+		width:200%;
+		color: #fff;
+	}
+	60%{
+		color: #fff;
+	}
+	100%{
+		width: 100%;
+		color: #E85078;
+	}
+}
+
+/* first block*/
+#main-header{
+	top:0;
+}
+
+
+/* top subblock of first block*/
+#hi-div{
+	background:#E85078;
+	text-align: center;
+}
+
+/* bottom subblock of first block */
+#changing-div{
 	background: white;
+	text-align: center;
 }
 
 /* text in top half of first blocok */
@@ -78,27 +191,52 @@ body{
 	100%{top:-20%;}
 }
 
-/* header - all */
-h1{
-	font-size: 4vw;
-	font-style: bold;
-	font-family: myFirstFont; 
-	color:0;
-	vertical-align: middle;
-	margin:0;
+/* second block*/
+#info-skills{
+	top:100%;
+	background-color: #777;
 }
+
+/* add photo and little info */
+#small-info{
+	background-color: white;
+}
+
+#skills{
+	background-color: white;
+}
+/* adding skills graph */
+#skills-graph{
+	background-color: gsreen;
+	margin-top: 0;
+	top:20%;
+}
+
+/*giving titile to skill bars*/
+#skills-title{
+	left: 0;
+	width:25%;
+	top:20%;
+	background-color: orsange;
+	text-align: right;
+}
+
+
 
 /* fixing minimum text size even after screen width if longer */
 @media screen and (min-width: 820px) {
   h1 {
      font-size: 36px;
   }
+  .skillbar {
+  	font-size: 18px;
+  }
 }
 
 /* second block */
 #rest-text{
 	position: absolute;
-	top:100%;
+	top:200%;
 
 }
 
