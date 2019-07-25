@@ -84,12 +84,26 @@ h1{
 	zborder-style: dotted;
 	margin: 0;
 	border: 0;
+	margin-bottom: 30%;
+	background-color: whitw;
 }
 
 /*skill bar divs*/
 .skillBar{
-	background-color: red;
-	margin-top: 17%;
+	font-size: 2vw;
+	font-style: bold;
+	font-family: myFirstFont; 
+	color: white;
+	background-color: #E85078;
+	vmargin-top: 100%;
+	animation-name: expand;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes expand{
+	from{width: 0;}
+	
 }
 
 /* first block*/
@@ -159,17 +173,18 @@ h1{
 }
 /* adding skills graph */
 #skills-graph{
-	background-color: white;
+	bahckground-color: white;
 }
 
-#skill-java{
-	width:70%;
-}
+
 
 /* fixing minimum text size even after screen width if longer */
 @media screen and (min-width: 820px) {
   h1 {
      font-size: 36px;
+  }
+  .skillbar {
+  	font-size: 18px;
   }
 }
 
