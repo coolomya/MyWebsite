@@ -2,7 +2,9 @@
 	font-family: myFirstFont;
 	src: url(fonts/Semi-Coder-Regular.otf);
 }
+/* */
 
+/* left margin removed */
 body{
 	sbackground: red;
 	sborder-style: dotted;
@@ -10,6 +12,7 @@ body{
 	margin-left: 0;
 }
 
+/* first block*/
 #main-header{
 	position: absolute;
 	top:0;
@@ -19,6 +22,7 @@ body{
 
 }
 
+/* top half of first block*/
 #hi-div{
 	position: absolute;
 	top:0;
@@ -31,6 +35,7 @@ body{
 	border: 0;
 }
 
+/* bottom half of first block */
 #changing-div{
 	position: absolute;
 	bottom: 0;
@@ -42,6 +47,7 @@ body{
 	background: white;
 }
 
+/* text in top half of first blocok */
 #hi-div h1{
 	position: absolute;
 	width:100%;
@@ -50,6 +56,7 @@ body{
 	background: #E85078;
 }
 
+/* text in bottom half of first blocok */
 #changing-div h1{
 	position: absolute;
 	width:100%;
@@ -63,13 +70,15 @@ body{
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
-
+/* animation */
+/* add JS to loop change text on time */
 @keyframes panUp{
 	0%{}
 	40%{top:0;}
 	100%{top:-20%;}
 }
 
+/* header - all */
 h1{
 	font-size: 4vw;
 	font-style: bold;
@@ -79,13 +88,14 @@ h1{
 	margin:0;
 }
 
+/* fixing minimum text size even after screen width if longer */
 @media screen and (min-width: 820px) {
   h1 {
      font-size: 36px;
   }
 }
 
-
+/* second block */
 #rest-text{
 	position: absolute;
 	top:100%;
