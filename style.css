@@ -150,8 +150,9 @@ h1{
 
 /* top subblock of first block*/
 #hi-div{
-	background:#E85078;
+	background: #E85078;
 	text-align: center;
+	
 }
 
 /* bottom subblock of first block */
@@ -164,31 +165,33 @@ h1{
 #hi-div h1{
 	position: absolute;
 	width:100%;
-	bottom: 0;
+	bottom:0;
 	color: white;
 	background: #E85078;
 }
 
 /* text in bottom half of first blocok */
-#changing-div h1{
+#second-text{
 	position: absolute;
 	width:100%;
 	top: 0;
 	color: #E85078;
 	sbackground: white;
 	animation-name: panUp;
-	animation-duration: 2s;
-	animation-delay: 1s;
+	animation-duration: 4s;
+	animdation-delay: 1s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
-	animation-direction: alternate;
+	animation-direction: reverse;
 }
 /* animation */
-/* add JS to loop change text on time */
+/* add JS to loop change text on time  DONE*/
+/*work on how much it should pan up*/
 @keyframes panUp{
-	0%{}
-	40%{top:0;}
-	100%{top:-20%;}
+	0%{top:-50%}
+	20%{top:0;}
+	80%{top:0;}
+	100%{top:-50%;}
 }
 
 /* second block*/
