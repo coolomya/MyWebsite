@@ -23,8 +23,15 @@ h1{
 }
 
 img{
-	width: 50%;
-	height: auto;
+	width: auto;
+	height: 70%;
+	animation-name: rotateImg;
+	animation-duration: 2s;
+}
+
+@keyframes rotateImg{
+	from{ transform: rotate(360deg);
+	}
 }
 
 #skills h2{
@@ -236,6 +243,13 @@ img{
 	top:20%;
 	background-color: orsange;
 	text-align: right;
+}
+#image-info{
+	background-color: ggreen;
+	top:70%;
+	width: 50%;
+	text-align:center;
+	font-family: myFirstFont;
 }
 
 .lavender-background{
