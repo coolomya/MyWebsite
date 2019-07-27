@@ -22,9 +22,14 @@ h1{
 
 }
 
+img{
+	width: 50%;
+	height: auto;
+}
+
 #skills h2{
 	
-	color: #E85078;
+	gcolor: #E85078;
 	sbackground: white;
 	font-style: bold;
 	font-family: myFirstFont; 
@@ -104,7 +109,7 @@ h1{
 	font-style: bold;
 	font-family: myFirstFont; 
 	color: white;
-	background-color: #E85078;
+	bbackground-color: #E85078;
 	vmargin-top: 100%;
 	animation-name: expand;
 	animation-duration: 2s;
@@ -116,13 +121,14 @@ h1{
 	font-size: 2vw;
 	font-style: bold;
 	font-family: myFirstFont; 
-	color: #E85078;
+	fcolor: #E85078;
 	background-color: white;
 	vmargin-top: 100%;
 	animation-name: panLeft;
 	animation-duration: 2s;
 	animation-timing-function: ease-out;
 }
+
 
 @keyframes expand{
 	from{width: 0;}
@@ -138,7 +144,6 @@ h1{
 	}
 	100%{
 		width: 100%;
-		color: #E85078;
 	}
 }
 
@@ -150,7 +155,7 @@ h1{
 
 /* top subblock of first block*/
 #hi-div{
-	background: #E85078;
+	cvbackground: #E85078;
 	text-align: center;
 	
 }
@@ -167,7 +172,7 @@ h1{
 	width:100%;
 	bottom:0;
 	color: white;
-	background: #E85078;
+	vbackground: #E85078;
 }
 
 /* text in bottom half of first blocok */
@@ -175,7 +180,7 @@ h1{
 	position: absolute;
 	width:100%;
 	top: 0;
-	color: #E85078;
+	dcolor: #E85078;
 	sbackground: white;
 	animation-name: panUp;
 	animation-duration: 4s;
@@ -188,10 +193,19 @@ h1{
 /* add JS to loop change text on time  DONE*/
 /*work on how much it should pan up*/
 @keyframes panUp{
-	0%{top:-50%}
-	20%{top:0;}
-	80%{top:0;}
-	100%{top:-50%;}
+	0%{top:-80px}
+	30%{top:0;}
+	70%{top:0;}
+	100%{top:-80px;}
+}
+
+#scroll-down-button{
+	border: none;
+	left:50%;
+	width: 80px;
+	height: 80px;
+	bottom: 10%;
+	border-radius: 50%;
 }
 
 /* second block*/
@@ -218,12 +232,25 @@ h1{
 /*giving titile to skill bars*/
 #skills-title{
 	left: 0;
-	width:25%;
+	width:23%;
 	top:20%;
 	background-color: orsange;
 	text-align: right;
 }
 
+.lavender-background{
+	background-color: #8a4ea6;
+	/* 8a4ea6  E85078*/
+}
+.lavender-color{
+	color: #8a4ea6;
+}
+
+#portrait-image{
+	position: absolute;
+	top:12.5%;
+	left: 25%;
+}
 
 
 /* fixing minimum text size even after screen width if longer */

@@ -19,10 +19,10 @@ for (var i = 0; i < skills.length ; i++) {
 	div.innerHTML = skills[i][1];
 	div.style.width=width_final;
 	div.style.marginBottom=margin_bot;
-	div.className="skillBar";
+	div.className="skillBar lavender-background ";
 	div2.innerHTML=skills[i][0];
 	div2.style.marginBottom=margin_bot;
-	div2.className="skillName";
+	div2.className="skillName lavender-color";
 	document.getElementById("skills-graph").appendChild(div);
 	document.getElementById("skills-title").appendChild(div2);
 }
