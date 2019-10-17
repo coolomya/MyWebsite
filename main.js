@@ -43,6 +43,21 @@ function changeTraits(){
 	return null;
 }
 
+//scroll down button script
+mybutton = document.getElementById("scroll-down-button");
+
+//button.onclick = function(){scrollFunction()};
+function scrollFunction(){
+	document.body.scrollTop = 1000;
+	document.documentElement.scrollTop = document.documentElement.clientHeight;
+}
+
+
+
+
+
+
+
 
 /*var e = document.getElementById('second-text');
 

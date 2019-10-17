@@ -1,3 +1,7 @@
+html{
+	scroll-behavior: smooth;
+}
+
 @font-face{
 	font-family: myFirstFont;
 	src: url(fonts/Semi-Coder-Regular.otf);
@@ -23,8 +27,8 @@ h1{
 }
 
 img{
-	width: auto;
-	height: 70%;
+	width: 50%;
+	height: auto;
 	animation-name: rotateImg;
 	animation-duration: 2s;
 }
